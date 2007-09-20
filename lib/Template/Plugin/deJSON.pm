@@ -36,7 +36,7 @@ use warnings;
 
 use base 'Template::Plugin';
 
-our $VERSION = 0.02;
+our $VERSION = 0.03;
 
 sub new {
   my ($class, $context) = @_;
@@ -111,7 +111,7 @@ sub _structure {
 
 sub deJSON {
   my ($self, $json)= @_;
-  return %{ $self->_structure($json) };
+  return $self->_structure($json);
 }
 
 =head1 BUGS

@@ -4,3 +4,5 @@ Revision history for Perl extension Template::Plugin::deJSON.
 	- original version;
 0.02  Wed Sept 19 08:47:31 2007
         - cope with nested JSON strings #1 (INSANITY!)
+0.03  Thu Sept 20 16:01:49 2007
+        - return a ref

@@ -21,6 +21,6 @@ my @strings = (
 );
 
 for my $string (@strings) {
-  my %hash = Template::Plugin::deJSON->deJSON($string);
-  warn $string, "\n", Dumper(\%hash), '-'x72, "\n";
+  my $hash = Template::Plugin::deJSON->deJSON($string);
+  warn $string, "\n", Dumper($hash), '-'x72, "\n";
 }
